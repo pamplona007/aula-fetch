@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div
+        style="display: flex; flex-direction: column; width: 300px; margin: 0 auto; padding: 20px; border: 1px solid #000; border-radius: 5px;"
+    >
+        <label>
+            CEP:
+            <input type="text" id="cep">
+        </label>
+        <label>
+            Rua:
+            <input type="text" id="street">
+        </label>
+        <br>
+        <label>
+            Complemento:
+            <input type="text" id="complement">
+        </label>
+        <label>
+            Cidade:
+            <input type="text" id="city">
+        </label>
+        <br>
+        <label>
+            Estado:
+            <input type="text" id="state">
+        </label>
+    </div>
+
+    <div
+        style="display: flex; flex-direction: column; width: 300px; margin: 0 auto; padding: 20px; border: 1px solid #000; border-radius: 5px;"
+    >
+        <label>
+            Estado:
+            <select id="statePesquisa">
+
+            </select>
+        </label>
+        <label>
+            Complemento:
+            <input type="text" id="complementPesquisa">
+        </label>
+        <label>
+            Cidade:
+            <select>
+                <option value="1">São Paulo</option>
+                <option value="2">Rio de Janeiro</option>
+                <option value="3">Belo Horizonte</option>
+            </select>
+        </label>
+        <br>
+
+
+        <table>
+            <thead>
+                <th>Logradouro</th>
+                <th>Complemento</th>
+                <th>CEP</th>
+            </thead>
+            <tbody id="corpoTabela"></tbody>
+        </table>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
